@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* content ka size chota ho jyega padding aur magin ke basis pe box sizing se */
+    box-sizing: border-box;
+
+}
+.wrapper{
+    /* hme height jitne viewport ki hai utni deni hai */
+    height: 100vh;
+    /* kyuki hme apni website matr vertical me he scroll karni hai */
+    overflow-x: hidden;
+    /* hme prespective bhi dena hai to{iska matlab mere laptop se mera user ka distance} */
+    perspective: 10px;
+    
+}
+.container{
+    /* ab hme to foreground, background ko abolute karna hoga to iska paarent ko non static karna hopga
+     */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+.parallax0,.parallax1,.parallax2,.parallax3,.parallax4,.parallax5,.parallax6,.parallax7,.parallax8{
+    position: absolute;
+    height: 100%;
+    /* zindex se mene layer ko positions de di ki vo z me kese layering kar rhe ho */
+    z-index: -1;
+    /* boject fit me image , video ka resolution vo kesi dikhni chiye */
+    object-fit: cover;
+    
+}
+h1{
+ position:absolute ;
+
+    color: white;
+    font-size: 5.5rem;
+    text-shadow: 0px 0px 10px  black ;
+    letter-spacing: 4px;
+    top: 25%;
+    align-content: center;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   
+      
+
+
+
+
+}
+.parallax0{
+    transform: translateZ(-90px) ;
+    scale: 10;
+}
+.parallax1{
+    transform: translateZ(-80px) ;
+    scale: 9;
+}
+.parallax2{
+    transform: translateZ(-70px) ;
+    scale: 8;
+}
+.parallax3{
+    transform: translateZ(-60px) ;
+    scale: 7;
+}
+.parallax4{
+    transform: translateZ(-50px) ;
+    scale: 6;
+}
+.parallax5{
+    transform: translateZ(-40px) ;
+    scale: 5;
+}
+.parallax6{
+    transform: translateZ(-30px) ;
+    scale: 4;
+}
+.parallax7{
+    transform: translateZ(-20px) ;
+    scale: 3;
+}
+.parallax8{
+    transform: translateZ(-10px) ;
+    scale: 2;
+}
+section{
+    background-color: rgb(32, 0, 2);
+     color: white;
+     padding: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    /* img to fix background */
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    /* more useful then img tag  */
+    background-image: url(amazon.png);
+}
+.bg2{
+    background-image: url(everest.jpg);
+}
+.bg3{
+    background-image: url(lake.jpg);
+}
+.secheading{
+    font-size: 3rem;
+    padding: 0p 10rem;
+    transform: translateX(35%);
+
+}
+.para{
+   font-size: 2rem;
+   padding: 0 10rem;
+    margin: 5rem 0; 
+}
+.text{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 40%);
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3rem;
+     
+
+}
